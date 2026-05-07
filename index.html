@@ -3,167 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPDigitalJourney | Premium Digital Growth Agency</title>
-    <!-- Tailwind CSS CDN -->
+    <title>SP Digital Journey | 360° Virtual Tours & Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(11, 15, 25, 0) 50%); }
+        .bg-dark { background-color: #0B0F19; }
+        .iframe-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 1.5rem; }
+        .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     </style>
 </head>
-<body class="bg-[#0B0F19] text-white overflow-x-hidden">
+<body class="bg-dark text-white">
 
     <!-- Navbar -->
     <header class="fixed top-0 w-full z-50 glass border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <h1 class="text-2xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                SPDigitalJourney
-            </h1>
-
+            <h1 class="text-xl font-bold tracking-tighter">SP Digital Journey</h1>
             <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
                 <a href="#services" class="hover:text-white transition">Services</a>
                 <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
                 <a href="#blog" class="hover:text-white transition">Blog</a>
                 <a href="#contact" class="hover:text-white transition">Contact</a>
             </nav>
-
-            <button class="bg-gradient-to-r from-indigo-500 to-blue-500 px-5 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-indigo-500/20 hover:scale-105 transition active:scale-95">
-                Get Started
-            </button>
+            <a href="https://wa.me/917799423794" target="_blank" class="bg-indigo-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-500 transition">
+                WhatsApp Us
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-gradient">
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Scale Your Local <br> <span class="text-indigo-500">Business Presence</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10">Capture your space in 360°. We specialize in Google Maps ranking, premium virtual tours, and SEO strategies that turn local searches into paying customers.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:bg-gray-200 transition">Get a Free Audit</a>
+                <a href="https://wa.me/917799423794" target="_blank" class="glass px-8 py-4 rounded-2xl font-bold hover:bg-white/5 transition flex items-center gap-2">
+                    <i data-lucide="message-circle"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="mb-16">
+            <h3 class="text-4xl font-bold">Featured Virtual Tours</h3>
+            <p class="text-gray-400 mt-4">Interactive 360° experiences we've created for our clients.</p>
+        </div>
+
+        <div class="grid gap-16">
+            <!-- Project 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center glass p-8 rounded-[40px]">
+                <div class="iframe-container shadow-2xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1778144788885!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1Y3cGpIcWdF!2m2!1d13.14608313717524!2d77.56990966002884!3f115.950816406534!4f-1.6853374233926388!5f0.4000000000000002" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <div class="inline-block px-4 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-bold mb-4">Google Street View</div>
+                    <h4 class="text-3xl font-bold mb-4">Premium Business Showcase</h4>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        An immersive 360° walkthrough designed to enhance Google Business Profile visibility. This tour allows potential customers to explore the facility virtually, building trust before they even arrive.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center glass p-8 rounded-[40px]">
+                <div class="order-2 lg:order-1">
+                    <div class="inline-block px-4 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm font-bold mb-4">Property Tour</div>
+                    <h4 class="text-3xl font-bold mb-4">Property in Karnataka</h4>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We created an interactive 360° tour for this property in Karnataka, which resulted in a 40% increase in bookings. Prospective viewers can navigate through the entire property seamlessly.
+                    </p>
+                </div>
+                <div class="iframe-container shadow-2xl order-1 lg:order-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1778144924000!6m8!1m7!1sCAoSHENJQUJJaEFwOVZTX0JwZlFQaWdxcWQ1Tkl0UXY.!2m2!1d13.17053594679462!2d77.53045188108314!3f2.407754093976184!4f3.4659690783772703!5f0.4000000000000002" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture & Contact -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full px-4 py-1.5 text-sm font-medium text-indigo-400 mb-6">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i> Premium Digital Agency
-                </div>
-
-                <h2 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-6">
-                    Grow Your Business with Powerful 
-                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-                        Google Visibility
-                    </span>
-                </h2>
-
-                <p class="text-lg text-gray-400 leading-relaxed max-w-xl mb-10">
-                    We help local businesses dominate Google Maps, build high-converting websites, and generate a consistent stream of customer inquiries.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-                    <button class="bg-indigo-600 hover:bg-indigo-500 px-8 py-4 rounded-2xl font-bold shadow-xl shadow-indigo-500/20 transition-all hover:-translate-y-1">
-                        Free Consultation
-                    </button>
-                    <button class="glass px-8 py-4 rounded-2xl font-bold hover:bg-white/5 transition">
-                        Explore Services
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hero Stats Card -->
-            <div class="relative">
-                <div class="glass rounded-[40px] p-8 shadow-2xl relative z-10">
-                    <div class="space-y-6">
-                        <div class="bg-indigo-500/10 rounded-2xl p-6 border border-indigo-500/20">
-                            <div class="flex justify-between items-end">
-                                <div>
-                                    <p class="text-sm text-indigo-300 font-medium mb-1">Google Search Growth</p>
-                                    <p class="text-4xl font-bold">+285%</p>
-                                </div>
-                                <i data-lucide="trending-up" class="w-10 h-10 text-indigo-400 mb-1"></i>
-                            </div>
+                <h3 class="text-4xl font-bold mb-6">Ready to showcase your space?</h3>
+                <p class="text-gray-400 mb-8">Fill out the form for a free digital audit. Clicking submit will open WhatsApp to send your details directly to us.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                            <i data-lucide="phone"></i>
                         </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-white/5 rounded-2xl p-5 border border-white/10">
-                                <p class="text-gray-400 text-sm">Monthly Views</p>
-                                <p class="text-2xl font-bold mt-1">1.2M+</p>
-                            </div>
-                            <div class="bg-white/5 rounded-2xl p-5 border border-white/10">
-                                <p class="text-gray-400 text-sm">Client Success</p>
-                                <p class="text-2xl font-bold mt-1">99%</p>
-                            </div>
-                        </div>
+                        <p class="font-semibold">+91 7799423794</p>
                     </div>
                 </div>
-                <!-- Decorative Blur -->
-                <div class="absolute -top-10 -right-10 w-64 h-64 bg-indigo-600/20 rounded-full blur-[100px]"></div>
+            </div>
+            
+            <div class="glass p-8 rounded-[32px]">
+                <!-- WHATSAPP FORM LOGIC -->
+                <script>
+                    function sendToWhatsApp(event) {
+                        event.preventDefault();
+                        const name = document.getElementById('name').value;
+                        const phone = document.getElementById('phone').value;
+                        const service = document.getElementById('service').value;
+                        const message = document.getElementById('message').value;
+
+                        const whatsappUrl = `https://wa.me/917799423794?text=` 
+                            + `*New Lead from SP Digital Journey*%0a%0a`
+                            + `*Name:* ${name}%0a`
+                            + `*Phone:* ${phone}%0a`
+                            + `*Service:* ${service}%0a`
+                            + `*Details:* ${message}`;
+
+                        window.open(whatsappUrl, '_blank');
+                    }
+                </script>
+
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <input type="text" id="name" placeholder="Full Name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition">
+                    <input type="tel" id="phone" placeholder="Phone Number" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition">
+                    <select id="service" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition text-gray-400">
+                        <option>360° Virtual Tour</option>
+                        <option>Google Maps Ranking</option>
+                        <option>Web Design</option>
+                    </select>
+                    <textarea id="message" placeholder="Tell us about your business" rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition"></textarea>
+                    <button type="submit" class="w-full bg-indigo-600 py-4 rounded-xl font-bold hover:bg-indigo-500 transition shadow-lg shadow-indigo-500/20 flex items-center justify-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5"></i> Send via WhatsApp
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-5xl font-bold mb-4">Our Digital Services</h3>
-            <p class="text-gray-400 max-w-2xl mx-auto">Tailored strategies to put your business on the digital map.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Service Card Template -->
-            <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition">
-                    <i data-lucide="map-pin"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3">Google Maps Ranking</h4>
-                <p class="text-gray-400 text-sm leading-relaxed">Appear at the top when local customers search for your services.</p>
-            </div>
-            <!-- Repeat for other services -->
-            <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition">
-                    <i data-lucide="layout"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3">Web Development</h4>
-                <p class="text-gray-400 text-sm leading-relaxed">Lightning fast, SEO-optimized websites that convert visitors into leads.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition">
-                    <i data-lucide="search"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3">SEO Optimization</h4>
-                <p class="text-gray-400 text-sm leading-relaxed">Strategic keyword targeting to boost your organic reach.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 transition">
-                    <i data-lucide="camera"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3">360° Virtual Tour</h4>
-                <p class="text-gray-400 text-sm leading-relaxed">Give customers an immersive view of your business location.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact CTA -->
-    <section id="contact" class="py-24">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-gradient-to-br from-indigo-600 to-blue-700 rounded-[40px] p-12 text-center relative overflow-hidden shadow-2xl shadow-indigo-500/20">
-                <div class="relative z-10">
-                    <h3 class="text-4xl md:text-6xl font-bold mb-6">Let’s Start Your Journey</h3>
-                    <p class="text-indigo-100 text-lg mb-10 max-w-xl mx-auto opacity-90">Ready to dominate your local market? Contact us today for a free digital audit.</p>
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <a href="https://wa.me/yournumber" class="bg-white text-indigo-600 px-10 py-4 rounded-2xl font-bold hover:scale-105 transition flex items-center gap-2">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us
-                        </a>
-                    </div>
-                </div>
-                <!-- Background Glow -->
-                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-[80px]"></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-12 border-t border-white/10 text-center text-gray-500">
-        <p>© 2026 SPDigitalJourney. Created with Precision.</p>
+    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>© 2026 SP Digital Journey. All rights reserved.</p>
     </footer>
 
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
     </script>
 </body>
