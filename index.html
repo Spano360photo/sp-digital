@@ -1,0 +1,363 @@
+export default function SPDigitalJourneyHomepage() {
+  const services = [
+    "Google Business Profile Optimization",
+    "Google Maps Ranking",
+    "Website Design & Development",
+    "SEO Optimization",
+    "Social Media Management",
+    "360° Virtual Tour",
+    "Branding & Creative Design",
+    "Review Management",
+  ];
+
+  const stats = [
+    { value: "100+", label: "Businesses Supported" },
+    { value: "1M+", label: "Google Views Generated" },
+    { value: "5000+", label: "Customer Interactions" },
+    { value: "24/7", label: "Client Support" },
+  ];
+
+  const blogs = [
+    "How to Rank Higher on Google Maps",
+    "SEO Tips for Local Businesses",
+    "Why Every Business Needs a Website",
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#0B0F19] text-white font-sans">
+      {/* Navbar */}
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <h1 className="text-2xl font-bold tracking-wide">
+            SPDigitalJourney
+          </h1>
+
+          <nav className="hidden md:flex gap-8 text-sm text-gray-300">
+            <a href="#services" className="hover:text-white transition">
+              Services
+            </a>
+            <a href="#portfolio" className="hover:text-white transition">
+              Portfolio
+            </a>
+            <a href="#blog" className="hover:text-white transition">
+              Blog
+            </a>
+            <a href="#contact" className="hover:text-white transition">
+              Contact
+            </a>
+          </nav>
+
+          <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-full text-sm font-medium shadow-lg hover:scale-105 transition">
+            Get Started
+          </button>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/10 blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-300 mb-6">
+              Premium Digital Growth Agency
+            </div>
+
+            <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+              Grow Your Business with Powerful
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                {" "}Google Visibility
+              </span>
+            </h2>
+
+            <p className="text-lg text-gray-400 leading-relaxed max-w-xl mb-10">
+              We help local businesses dominate Google Maps, build premium
+              websites, improve SEO rankings, and generate more customer
+              inquiries.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-7 py-4 rounded-2xl font-medium shadow-xl hover:scale-105 transition">
+                Free Consultation
+              </button>
+
+              <button className="border border-white/20 px-7 py-4 rounded-2xl text-gray-300 hover:bg-white/5 transition">
+                Explore Services
+              </button>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 shadow-2xl">
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl p-6 border border-white/10">
+                  <div className="text-sm text-gray-400 mb-2">
+                    Google Visibility Growth
+                  </div>
+                  <div className="text-4xl font-bold">+285%</div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
+                    <div className="text-gray-400 text-sm">Profile Views</div>
+                    <div className="text-3xl font-bold mt-2">1M+</div>
+                  </div>
+
+                  <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
+                    <div className="text-gray-400 text-sm">Businesses</div>
+                    <div className="text-3xl font-bold mt-2">100+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h3 className="text-4xl font-bold mb-4">
+            Our Digital Growth Services
+          </h3>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Everything your business needs to grow online and dominate local
+            search visibility.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white/5 border border-white/10 rounded-3xl p-6 hover:-translate-y-2 transition duration-300"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
+
+              <h4 className="text-xl font-semibold mb-3">{service}</h4>
+
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Premium digital solutions designed for visibility, engagement,
+                and business growth.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Results */}
+      <section className="py-24 bg-white/5 border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <h3 className="text-4xl font-bold mb-4">
+              Real Results That Drive Growth
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-white/10 rounded-3xl p-8 text-center"
+              >
+                <div className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-4">
+                  {stat.value}
+                </div>
+                <div className="text-gray-400">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio */}
+      <section id="portfolio" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h3 className="text-4xl font-bold mb-4">
+            Featured Projects & Success Stories
+          </h3>
+          <p className="text-gray-400">
+            Showcasing premium digital experiences and business growth.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          {[1, 2, 3].map((item) => (
+            <div
+              key={item}
+              className="overflow-hidden rounded-[32px] bg-white/5 border border-white/10"
+            >
+              <div className="h-64 bg-gradient-to-br from-purple-500/30 to-blue-500/20" />
+
+              <div className="p-6">
+                <div className="text-sm text-purple-400 mb-2">
+                  Google Growth Project
+                </div>
+                <h4 className="text-2xl font-semibold mb-3">
+                  Business Visibility Transformation
+                </h4>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Increased local visibility, improved customer engagement, and
+                  stronger digital presence.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-white/5 border-y border-white/10">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h3 className="text-4xl font-bold mb-14">What Clients Say</h3>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="bg-[#111827] border border-white/10 rounded-3xl p-8 text-left"
+              >
+                <div className="text-yellow-400 mb-4">★★★★★</div>
+
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  SPDigitalJourney helped us improve our Google visibility and
+                  generate significantly more customer inquiries.
+                </p>
+
+                <div>
+                  <div className="font-semibold">Business Owner</div>
+                  <div className="text-sm text-gray-400">Local Business</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h3 className="text-4xl font-bold mb-4">
+            Our Simple Growth Process
+          </h3>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-6">
+          {[
+            "Consultation",
+            "Strategy",
+            "Optimization",
+            "Growth",
+          ].map((step, index) => (
+            <div
+              key={index}
+              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center"
+            >
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                {index + 1}
+              </div>
+
+              <h4 className="text-2xl font-semibold mb-3">{step}</h4>
+
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Strategic digital growth solutions tailored for your business.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-white/5 border-y border-white/10">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold mb-4">
+              Frequently Asked Questions
+            </h3>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              "How long does Google ranking take?",
+              "Do you provide website development?",
+              "Can you manage our Google Business Profile?",
+              "Do you provide monthly reports?",
+            ].map((faq, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-white/10 rounded-2xl p-6"
+              >
+                <h4 className="text-lg font-semibold mb-3">{faq}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  We provide tailored digital growth solutions designed to help
+                  businesses improve online visibility and customer engagement.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section id="blog" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h3 className="text-4xl font-bold mb-4">
+            Latest Insights & Digital Tips
+          </h3>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          {blogs.map((blog, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-[32px] bg-white/5 border border-white/10"
+            >
+              <div className="h-56 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
+
+              <div className="p-6">
+                <div className="text-sm text-purple-400 mb-2">Digital Tips</div>
+                <h4 className="text-2xl font-semibold mb-4">{blog}</h4>
+
+                <button className="text-blue-400 hover:text-blue-300 transition">
+                  Read More →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contact"
+        className="py-24 bg-gradient-to-br from-purple-600/20 to-blue-600/10"
+      >
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-5xl font-bold mb-6">
+            Let’s Grow Your Business
+          </h3>
+
+          <p className="text-gray-300 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+            Ready to build a stronger digital presence and attract more
+            customers? Let’s create something powerful together.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl font-medium shadow-xl hover:scale-105 transition">
+              WhatsApp Us
+            </button>
+
+            <button className="border border-white/20 px-8 py-4 rounded-2xl hover:bg-white/5 transition">
+              Contact Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+        © 2026 SPDigitalJourney. All rights reserved.
+      </footer>
+    </div>
+  );
+}
